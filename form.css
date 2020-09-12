@@ -1,0 +1,81 @@
+/* CSS Rules for the Dado Tea Lunch Special Form */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  font-size: 1.5em;
+}
+
+.leftnav {
+  width: 21.8%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+}
+
+.logo {
+  margin: 0;
+}
+
+.links {
+  max-height: calc(55vh);
+  overflow-y: auto;
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  display: block;
+  margin: 20px 60px auto;
+  color: #8b8589;
+}
+
+a:hover {
+  color: purple;
+}
+
+.rightnav {
+  width: 27%;
+  float: right;
+}
+
+.rightnav img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 25px;
+}
+
+h1,
+legend {
+  color: purple;
+}
+
+legend {
+  font-size: 2rem;
+}
+
+.form {
+  width: 50%;
+  margin-left: 410px;
+  padding: 10px 100px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+  align-content: center;
+  background-color: #f4a469;
+  opacity: 0.9;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#btn {
+  width: 150px;
+  height: 50px;
+  background-color: purple;
+  color: yellow;
+  float: right;
+  font-size: 1.5rem;
+  border-radius: 8px;
+}

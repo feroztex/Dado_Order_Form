@@ -1,0 +1,160 @@
+<!-- this is the markup document that should contains a form
+     that represents the choices available on the 
+     Dado Tea Lunch Special paper form -->
+
+<!-- remember to use action="http://cscis12.dce.harvard.edu/echo" for the form element -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Dado Order Form</title>
+  </head>
+
+  <body>
+    <div class="leftnav">
+      <div class="logo">
+        <img src="images/favicon.png" alt="logo" />
+      </div>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">Bread/Merchandise</a>
+        <a href="#">Sandwiches</a>
+        <a href="#">Wraps</a>
+        <a href="#">Multi-Grain Specialties</a>
+        <a href="#">Noodles</a>
+        <a href="#">Salads</a>
+        <a href="#">Small Plates</a>
+        <a href="#">Braekfast</a>
+        <a href="#">Coffee & Espresso</a>
+        <a href="#">Bubble/Iced/Special Teas</a>
+        <a href="#">Fine Loose Tea</a>
+        <a href="#">Smoothies</a>
+        <a href="#">Vegetarian/Vegan</a>
+        <a href="#">Glutten Free Options</a>
+        <a href="#">Catering</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="rightnav">
+      <img src="images/rs=w_1023px,cg_true,m.webp" alt="image1" />
+      <img src="images/rs=w_1023px,cg_true,m (1).webp" alt="image2" />
+      <img src="images/rs=w_1023px,cg_true,m.jpeg" alt="image3" />
+      <img src="images/rs=w_400px,cg_true,m.webp" alt="image4" />
+    </div>
+
+    <div class="form">
+      <h1>Dado Tea Lunch Special</h1>
+      <p>
+        Monday through Friday<br />
+        11am - 3pm<br />
+        $9.95 plus tax <br /><br />
+        Includes sandwich, snack and drink.
+      </p>
+
+      <form action="http://cscis12.dce.harvard.edu/echo" method="POST">
+        <fieldset>
+          <legend>Order Information</legend>
+          <label for="name"><span class="bold">Name</span> </label><br />
+          <input type="text" id="name" name="name" /><br /><br />
+          <input type="radio" id="here" name="here" />
+          <label for="here">Here</label><br />
+          <input type="radio" id="togo" name="togo" />
+          <label for="togo">To Go</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sandwiches</legend>
+          <span class="bold">Monday</span><br />
+          <input type="radio" id="tomato" name="tomato" />
+          <label for="tomato">Tomato Mozzarella</label><br />
+          <input type="radio" id="chicken" name="chicken" />
+          <label for="chicken">Chicken Salad</label><br /><br />
+
+          <span class="bold">Tuesday</span><br />
+          <input type="radio" id="greek" name="greek" />
+          <label for="greek">Greek Salad Wrap</label><br />
+          <input type="radio" id="toto" name="toto" />
+          <label for="toto">Toto Wrap</label><br /><br />
+
+          <span class="bold">Wednesday</span><br />
+          <input type="radio" id="pepper" name="pepper" />
+          <label for="pepper">Red Pepper Hummus</label><br />
+          <input type="radio" id="turkey" name="turkey" />
+          <label for="turkey">Roasted Turkey</label><br /><br />
+
+          <span class="bold">Thursday</span><br />
+          <input type="radio" id="carrot" name="carrot" />
+          <label for="carrot">Carrot-Ginger Hummus Wrap</label><br />
+          <input type="radio" id="egg" name="egg" />
+          <label for="egg">Egg Salad</label><br /><br />
+
+          <span class="bold">Friday</span><br />
+          <input type="radio" id="dado" name="dado" />
+          <label for="dado">Dado Wrap</label><br />
+          <input type="radio" id="tuna" name="tuna" />
+          <label for="tuna">Tuna Salad</label><br /><br />
+
+          <hr />
+
+          <input type="checkbox" id="bread" name="bread" />
+          <label for="bread">Gluten Free Bread (75c extra)</label><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Snack</legend>
+          <span class="bold">Snacks</span><br />
+          <input type="radio" id="apple" name="apple" />
+          <label for="apple">Apple</label><br />
+          <input type="radio" id="banana" name="banana" />
+          <label for="banana">Banana</label><br />
+          <input type="radio" id="chips" name="chips" />
+          <label for="chips">Potato Chips</label><br />
+          <br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Drink</legend>
+          <span class="bold">Regular Size Drinks</span><br />
+          <label for="drinks">Choose your drinks:</label>
+          <select name="drinks" id="drinks">
+            <optgroup label="Black Tea">
+              <option value="hotkeemun">Hot Black Tea - Keemun</option>
+              <option value="hotdecaf">Hot Black Tea - Decaf Keemun</option>
+              <option value="icedkeemun">Iced Black Tea - Keemun</option>
+              <option value="iceddecaf">Iced Black Tea - Decaf Keemun</option>
+            </optgroup>
+            <optgroup label="Green Tea">
+              <option value="hotsencha">Hot Green Tea - Sencha</option>
+              <option value="decaf">Hot Green Tea - Decaf</option>
+              <option value="icedsencha">Iced Green Tea - Sencha</option>
+              <option value="greendecaf">Iced Green Tea - Decaf</option>
+            </optgroup>
+            <optgroup label="Coffee">
+              <option value="hotcoffee">Hot Coffee</option>
+              <option value="decafcoffee">Hot Decaf Coffee</option>
+              <option value="icedcoffee">Iced Coffee</option>
+              <option value="iceddecafcoffee">Iced Decaf Coffee</option>
+            </optgroup>
+            <optgroup label="Bubble Tea ($1.50 extra)">
+              <option value="bubble">Bubble Tea</option>
+            </optgroup>
+          </select>
+
+          <hr />
+          <input type="checkbox" id="laerge-drink" name="laerge-drink" />
+          <label for="laerge-drink">Large Drink (75c extra)</label><br /><br />
+        </fieldset>
+
+        <br />
+        <button id="btn" type="submit">Place Order</button>
+        <br /><br />
+      </form>
+    </div>
+  </body>
+</html>
